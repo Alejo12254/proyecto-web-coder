@@ -8,7 +8,15 @@ gris oscuro: #1E293B
 naranja: #F0832A
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.nav-items {
+    list-style: none;
+}
 /* estilos generales de la pagina */
 .pagina {
     font-family: "Poppins", sans-serif;
@@ -35,13 +43,22 @@ naranja: #F0832A
 }
 
 
-/* estilo del encabezado y pie de pagina*/
-.encabezado, .pie-pagina {
+/* estilo del encabezado*/
+.encabezado {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+/* estilo pie de pagina*/
+.pie-pagina {
     background-color: #0F172A;
     color: #F8FAFC;
 }
-
-
 /* titulo principal */
 .titulo-principal {
     color: #0F172A;
@@ -79,4 +96,31 @@ naranja: #F0832A
     color: #F0832A;
     font-size: 1rem;
     font-weight: 400;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-ed {
+    padding: 2rem;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
