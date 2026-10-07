@@ -133,6 +133,21 @@ img {
     display: block;
 }
 
+.logo {
+    width: 150px;
+}
+
+.logo-redes {
+    width: 100px;
+}
+
+.foto-mia {
+    width: 500px;
+}
+
+.img-intereses {
+    width: 750px;
+}
 /* Grid de proyectos */
 .proyectos-grid {
     display: grid;
@@ -158,6 +173,9 @@ img {
 
 /* Estilo Tablet */
 @media (min-width: 768px) {
+    .encabezado {
+        flex-direction: row;
+    }
 
     .main-ed {
         padding: 2.5rem;
@@ -174,6 +192,9 @@ img {
 
 /* Estilo Desktop */
 @media (min-width: 1024px) {
+    .encabezado{
+        flex-direction: row;
+    }
 
     .proyectos-grid {
         grid-template-columns: 1fr 1fr;
