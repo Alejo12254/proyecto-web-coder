@@ -34,6 +34,10 @@ naranja: #F0832A
     color: inherit;
 }
 
+/* estilos parrafos proyecto */
+.parrafo-proyecto {
+    color: #1E293B;
+}
 
 /* estilos de los parrafos */
 .parrafo {
@@ -42,23 +46,12 @@ naranja: #F0832A
     font-weight: 400;
 }
 
-
-/* estilo del encabezado*/
-.encabezado {
-    background-color: #0F172A;
-    color: #F8FAFC;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-
 /* estilo pie de pagina*/
 .pie-pagina {
     background-color: #0F172A;
     color: #F8FAFC;
 }
+
 /* titulo principal */
 .titulo-principal {
     color: #0F172A;
@@ -80,6 +73,11 @@ naranja: #F0832A
     color: #0F172A;
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+/* titulos h3  proyecto */
+.titulo-tres-proyecto {
+    color: #2563EB;
 }
 
 
@@ -119,7 +117,7 @@ naranja: #F0832A
 
 }
 
-.card {
+.proyecto-card {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -173,9 +171,6 @@ img {
 
 /* Estilo Tablet */
 @media (min-width: 768px) {
-    .encabezado {
-        flex-direction: row;
-    }
 
     .main-ed {
         padding: 2.5rem;
@@ -192,9 +187,6 @@ img {
 
 /* Estilo Desktop */
 @media (min-width: 1024px) {
-    .encabezado{
-        flex-direction: row;
-    }
 
     .proyectos-grid {
         grid-template-columns: 1fr 1fr;
@@ -203,4 +195,79 @@ img {
             "proyecto1 proyecto2";
         gap: 2rem;
     }
+}
+
+.carousel-img {
+    height: 400px;
+    object-fit: contain;
+}
+
+.perfil-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.perfil-card .card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-propia .nav-link {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* pseudoclases */
+.navbar-propia .nav-link:hover {
+    color: #38BDF8;
+    transform: translateY(-2px);
+}
+
+.navbar-propia .nav-link:focus {
+    outline: 2px solid #38BDF8;
+    outline-offset: 3px;
+}
+
+.navbar-propia .nav-link:active {
+    transform: scale(0.95);
+}
+
+.enlace {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.enlace:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+.enlace:focus {
+    outline: 2px solid #38BDF8;
+    outline-offset: 3px;
+}
+
+.enlace:active {
+    transform: scale(0.95);
+}
+
+.boton-propio {
+    background-color: #2563EB;
+    border-color: #2563EB;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-propio:hover {
+    background-color: #0F172A;
+    border-color: #0F172A;
+    transform: translateY(-2px);
+}
+
+.boton-propio:focus {
+    outline: 2px solid #38BDF8;
+    outline-offset: 3px;
+}
+
+.boton-propio:active {
+    transform: scale(0.95);
 }
