@@ -1,0 +1,277 @@
+/* paleta de colores */
+/*
+azul oscuro: #0F172A
+azul intenso: #2563EB
+celeste: #38BDF8
+gris claro: #F8FAFC
+gris oscuro: #1E293B
+naranja: #F0832A
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-items {
+    list-style: none;
+}
+/* estilos generales de la pagina */
+.pagina {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #F8FAFC;
+    background-image: url("../img/fondo.png");
+    color: #1E293B;
+}
+
+
+/* estilos de los links */
+.enlace {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* estilos parrafos proyecto */
+.parrafo-proyecto {
+    color: #1E293B;
+}
+
+/* estilos de los parrafos */
+.parrafo {
+    color: #1E293B;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* estilo pie de pagina*/
+.pie-pagina {
+    background-color: #0F172A;
+    color: #F8FAFC;
+}
+
+/* titulo principal */
+.titulo-principal {
+    color: #0F172A;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+
+/* titulos nivel dos */
+.titulo-dos {
+    color: #2563EB;
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+
+/* titulos nivel tres*/
+.titulo-tres {
+    color: #0F172A;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* titulos h3  proyecto */
+.titulo-tres-proyecto {
+    color: #2563EB;
+}
+
+
+/* titulos nivel cuatro */
+.titulo-cuatro {
+    color: #2563EB;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+/* copyright */
+.copy {
+    color: #F0832A;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-ed {
+    padding: 2rem;
+
+}
+
+.navbar-propia {
+    background-color: #0F172A;
+}
+
+.proyecto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    min-width: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo-redes {
+    width: 100px;
+}
+
+.foto-mia {
+    width: 500px;
+}
+
+.img-intereses {
+    width: 750px;
+}
+/* Grid de proyectos */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "titulo"
+        "proyecto1"
+        "proyecto2";
+    gap: 1.5rem;
+}
+
+.titulo-proyectos {
+    grid-area: titulo;
+}
+
+.proyecto-1 {
+    grid-area: proyecto1;
+}
+
+.proyecto-2 {
+    grid-area: proyecto2;
+}
+
+/* Estilo Tablet */
+@media (min-width: 768px) {
+
+    .main-ed {
+        padding: 2.5rem;
+    }
+
+    .seccion {
+        padding: 2rem;
+    }
+
+    .proyectos-grid {
+        gap: 2rem;
+    }
+}
+
+/* Estilo Desktop */
+@media (min-width: 1024px) {
+
+    .proyectos-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo titulo"
+            "proyecto1 proyecto2";
+        gap: 2rem;
+    }
+}
+
+.carousel-img {
+    height: 400px;
+    object-fit: contain;
+}
+
+.perfil-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.perfil-card .card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-propia .nav-link {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* pseudoclases */
+.navbar-propia .nav-link:hover {
+    color: #38BDF8;
+    transform: translateY(-2px);
+}
+
+.navbar-propia .nav-link:focus {
+    outline: 2px solid #38BDF8;
+    outline-offset: 3px;
+}
+
+.navbar-propia .nav-link:active {
+    transform: scale(0.95);
+}
+
+.enlace {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.enlace:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+.enlace:focus {
+    outline: 2px solid #38BDF8;
+    outline-offset: 3px;
+}
+
+.enlace:active {
+    transform: scale(0.95);
+}
+
+.boton-propio {
+    background-color: #2563EB;
+    border-color: #2563EB;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-propio:hover {
+    background-color: #0F172A;
+    border-color: #0F172A;
+    transform: translateY(-2px);
+}
+
+.boton-propio:focus {
+    outline: 2px solid #38BDF8;
+    outline-offset: 3px;
+}
+
+.boton-propio:active {
+    transform: scale(0.95);
+}
