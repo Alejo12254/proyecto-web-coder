@@ -29,7 +29,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav">
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarNavLabel">Menú</h5>
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="drawer"
+                        aria-label="Cerrar menú">
+                    </button>
+                </div>
                 <div class="drawer-body">
 
                     <ul class="navbar-nav gap-5">
