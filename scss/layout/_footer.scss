@@ -1,0 +1,10 @@
+@use "../utilities/variables" as v;
+
+.pie-pagina {
+    background-color: v.$color-azul-oscuro;
+    color: v.$color-gris-claro;
+}
+
+.logo-redes {
+    width: v.$ancho-logo-redes;
+}

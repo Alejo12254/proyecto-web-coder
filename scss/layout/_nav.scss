@@ -1,0 +1,35 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins";
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: v.$espaciado-xs;
+}
+
+.navbar-propia {
+    background-color: v.$color-azul-oscuro;
+
+    .nav-link {
+        transition: color v.$transicion-media, transform v.$transicion-corta;
+
+        &:hover {
+            color: v.$color-celeste;
+            transform: translateY(-2px);
+        }
+
+        &:focus {
+            @include mixins.focus-outline;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+.logo {
+    width: v.$ancho-logo;
+}

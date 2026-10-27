@@ -1,0 +1,22 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins";
+
+.boton-propio {
+    background-color: v.$color-azul;
+    border-color: v.$color-azul;
+    transition: background-color v.$transicion-media, transform v.$transicion-corta;
+
+    &:hover {
+        background-color: v.$color-azul-oscuro;
+        border-color: v.$color-azul-oscuro;
+        transform: translateY(-2px);
+    }
+
+    &:focus {
+        @include mixins.focus-outline;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
