@@ -1,0 +1,77 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins";
+
+.proyecto-card {
+    display: flex;
+    flex-direction: column;
+    gap: v.$espaciado-lg;
+    padding: v.$espaciado-lg;
+    min-width: 0;
+    background-color: v.$color-blanco;
+    border: v.$borde-card;
+    border-radius: v.$radio-card;
+    box-shadow: v.$sombra-card;
+    transition: transform v.$transicion-corta, box-shadow v.$transicion-corta;
+
+    &:hover {
+        @include mixins.hover-lift(-4px, v.$sombra-card-hover);
+    }
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "titulo"
+        "proyecto1"
+        "proyecto2";
+    gap: v.$espaciado-md;
+
+    @media (min-width: v.$breakpoint-tablet) {
+        gap: v.$espaciado-lg;
+    }
+
+    @media (min-width: v.$breakpoint-desktop) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo titulo"
+            "proyecto1 proyecto2";
+        gap: v.$espaciado-lg;
+    }
+}
+
+.titulo-proyectos {
+    grid-area: titulo;
+}
+
+.proyecto-1 {
+    grid-area: proyecto1;
+}
+
+.proyecto-2 {
+    grid-area: proyecto2;
+}
+
+.perfil-card {
+    width: 100%;
+    max-width: v.$ancho-foto;
+    margin: 0 auto;
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.carousel-img {
+    height: v.$alto-carousel;
+    object-fit: contain;
+}
+
+.foto-mia {
+    width: v.$ancho-foto;
+}
+
+.img-intereses {
+    width: v.$ancho-intereses;
+}

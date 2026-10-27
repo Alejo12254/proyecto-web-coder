@@ -1,0 +1,21 @@
+@use "../utilities/variables" as v;
+
+.main-ed {
+    padding: v.$espaciado-lg;
+
+    @media (min-width: v.$breakpoint-tablet) {
+        padding: v.$espaciado-xl;
+    }
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    gap: v.$espaciado-sm;
+    padding: v.$espaciado-md;
+    margin-bottom: v.$espaciado-lg;
+
+    @media (min-width: v.$breakpoint-tablet) {
+        padding: v.$espaciado-lg;
+    }
+}

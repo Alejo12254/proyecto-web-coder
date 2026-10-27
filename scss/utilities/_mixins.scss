@@ -1,0 +1,11 @@
+@use "variables" as v;
+
+@mixin focus-outline {
+    outline: 2px solid v.$color-celeste;
+    outline-offset: 3px;
+}
+
+@mixin hover-lift($distancia, $sombra) {
+    transform: translateY($distancia);
+    box-shadow: $sombra;
+}

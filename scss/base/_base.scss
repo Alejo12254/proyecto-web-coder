@@ -1,0 +1,43 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.pagina {
+    background-color: v.$color-gris-claro;
+    background-image: url("../img/fondo.png");
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.enlace {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform v.$transicion-corta, opacity v.$transicion-media;
+
+    &:hover {
+        transform: translateY(-2px);
+        opacity: 0.8;
+    }
+
+    &:focus {
+        @include mixins.focus-outline;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}

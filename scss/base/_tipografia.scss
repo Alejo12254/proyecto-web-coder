@@ -1,0 +1,61 @@
+@use "../utilities/variables" as v;
+
+// Tipografía general
+.pagina {
+    font-family: v.$fuente-principal;
+    font-weight: v.$peso-regular;
+    line-height: v.$line-height-base;
+    color: v.$color-gris-oscuro;
+}
+
+// Párrafos de proyectos
+.parrafo-proyecto {
+    color: v.$color-gris-oscuro;
+}
+
+// Párrafos generales
+.parrafo {
+    color: v.$color-gris-oscuro;
+    font-size: v.$font-size-parrafo;
+    font-weight: v.$peso-regular;
+}
+
+// Título principal
+.titulo-principal {
+    color: v.$color-azul-oscuro;
+    font-size: v.$font-size-titulo-principal;
+    font-weight: v.$peso-bold;
+}
+
+// Títulos nivel dos
+.titulo-dos {
+    color: v.$color-azul;
+    font-size: v.$font-size-titulo-dos;
+    font-weight: v.$peso-semibold;
+}
+
+// Títulos nivel tres
+.titulo-tres {
+    color: v.$color-azul-oscuro;
+    font-size: v.$font-size-titulo-tres;
+    font-weight: v.$peso-semibold;
+}
+
+// Títulos h3 de proyectos
+.titulo-tres-proyecto {
+    color: v.$color-azul;
+}
+
+// Títulos nivel cuatro
+.titulo-cuatro {
+    color: v.$color-azul;
+    font-size: v.$font-size-titulo-cuatro;
+    font-weight: v.$peso-semibold;
+}
+
+// Copyright
+.copy {
+    color: v.$color-naranja;
+    font-size: v.$font-size-copy;
+    font-weight: v.$peso-regular;
+}
