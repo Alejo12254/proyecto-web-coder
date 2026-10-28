@@ -123,23 +123,44 @@
 
                 </div>
 
-                <div class="position-absolute top-50 start-0 end-0 translate-middle-y d-flex justify-content-between px-5">
+                <div class="carousel-overlay-controls">
 
-                    <button class="btn btn-secondary btn-sm"
-                            type="button"
-                            data-bs-target="#carouselPortfolio"
-                            data-bs-slide="prev"
-                            aria-label="Anterior">
-                        ←
-                    </button>
+                    <div>
+                        <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                                type="button"
+                                data-bs-target="#carouselPortfolio"
+                                data-bs-slide="prev">
+                            <span class="carousel-icon-prev" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
 
-                    <button class="btn btn-secondary btn-sm"
-                            type="button"
-                            data-bs-target="#carouselPortfolio"
-                            data-bs-slide="next"
-                            aria-label="Siguiente">
-                        →
-                    </button>
+                        <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                                type="button"
+                                data-bs-target="#carouselPortfolio"
+                                data-bs-slide="next">
+                            <span class="carousel-icon-next" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <button type="button"
+                                data-bs-target="#carouselPortfolio"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"></button>
+
+                        <button type="button"
+                                data-bs-target="#carouselPortfolio"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                        <button type="button"
+                                data-bs-target="#carouselPortfolio"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
 
                 </div>
 
