@@ -150,9 +150,12 @@ img {
 }
 
 .boton-propio {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-propio {
   background-color: #2563EB;
   border-color: #2563EB;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .boton-propio:hover {
   background-color: #0F172A;
@@ -167,6 +170,16 @@ img {
   transform: scale(0.95);
 }
 
+@keyframes aparecer-card {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .proyecto-card {
   display: flex;
   flex-direction: column;
@@ -178,6 +191,7 @@ img {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: aparecer-card 0.5s ease both;
 }
 .proyecto-card:hover {
   transform: translateY(-4px);

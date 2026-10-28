@@ -1,6 +1,18 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins";
 
+@keyframes aparecer-card {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .proyecto-card {
     display: flex;
     flex-direction: column;
@@ -12,6 +24,7 @@
     border-radius: v.$radio-card;
     box-shadow: v.$sombra-card;
     transition: transform v.$transicion-corta, box-shadow v.$transicion-corta;
+    animation: aparecer-card 0.5s ease both;
 
     &:hover {
         @include mixins.hover-lift(-4px, v.$sombra-card-hover);
