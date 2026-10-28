@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
      <!-- BOOTSTRAP -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+     <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
      <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Mi portfolio profesional | Proyectos</title>
@@ -78,7 +80,7 @@
         <h1 class="titulo-principal">Proyectos</h1>
         <p class="parrafo">Acá podrán conocer los proyectos y propuestas conceptuales que desarrollé a lo largo de mi formación como profesional.</p>
         <section class="seccion proyectos-grid">
-            <h2 class="titulo-dos titulo-proyectos">Mis Proyectos</h2>
+            <h2 class="titulo-dos titulo-proyectos" data-aos="fade-right">Mis Proyectos</h2>
             <article class="proyecto-card proyecto-1">
                 <h3 class="titulo-tres-proyecto">Mi portfolio profesional</h3>
                 <p class="parrafo-proyecto">Desarrollé un sitio web personal para presentar información sobre mí, mis proyectos, habilidades y formas de contacto. La idea es que funcione como una primera versión de mi portfolio profesional y que pueda seguir mejorándolo a medida que aprendo nuevas tecnologías.</p>
@@ -110,7 +112,7 @@
             </article>
         </section>
         <section class="seccion">
-            <h2 class="titulo-dos">Galería de proyectos</h2>
+            <h2 class="titulo-dos" data-aos="fade-right">Galería de proyectos</h2>
 
             <div id="carouselProyectos" class="carousel carousel-overlay slide">
 
@@ -166,7 +168,7 @@
         </section>
     </main>
     <footer class="pie-pagina">
-        <h2 class="titulo-dos">Redes sociales</h2>
+        <h2 class="titulo-dos" data-aos="fade-right">Redes sociales</h2>
         <a class="enlace" href="https://www.instagram.com/" target="_blank"><img src="../img/Instagram.png" width="150" alt="Logo de Instagram"></a>
         <a class="enlace" href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" width="150" alt="Logo de Facebook"></a>
         <a class="enlace" href="https://x.com/" target="_blank"><img src="../img/x.png" width="150" alt="Logo de X"></a>
@@ -174,5 +176,10 @@
     </footer>
     <!-- BOOTSTRAP -->
      <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+     <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
