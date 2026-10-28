@@ -1,10 +1,15 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins";
 
+%boton-base {
+    transition: background-color v.$transicion-media, transform v.$transicion-corta;
+}
+
 .boton-propio {
+    @extend %boton-base;
+
     background-color: v.$color-azul;
     border-color: v.$color-azul;
-    transition: background-color v.$transicion-media, transform v.$transicion-corta;
 
     &:hover {
         background-color: v.$color-azul-oscuro;

@@ -150,9 +150,12 @@ img {
 }
 
 .boton-propio {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-propio {
   background-color: #2563EB;
   border-color: #2563EB;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .boton-propio:hover {
   background-color: #0F172A;
