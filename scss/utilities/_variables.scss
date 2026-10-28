@@ -34,7 +34,7 @@ $espaciado-xl: 2.5rem;
 $ancho-logo: 150px;
 $ancho-logo-redes: 100px;
 $ancho-foto: 500px;
-$ancho-intereses: 750px;
+$ancho-intereses: $ancho-foto * 1.5;
 $alto-carousel: 400px;
 
 // Cards
