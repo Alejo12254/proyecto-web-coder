@@ -33,9 +33,9 @@ También incluye una propuesta conceptual de una plataforma académica llamada *
 
 ```text
 proyecto-web-coder/
-├── css/
+├── styles/
 │   └── styles.css
-├── img/
+├── assets/
 ├── pages/
 │   ├── sobre-mi.html
 │   ├── proyectos.html
@@ -74,7 +74,7 @@ Los estilos se organizan en:
 - **Layout:** estructura principal, navegación y footer.
 - **Components:** botones, tarjetas y otros elementos reutilizables.
 
-El archivo `css/styles.css` es generado a partir de `scss/main.scss`.
+El archivo `styles/styles.css` es generado a partir de `scss/main.scss`.
 
 ### Compilación de SCSS
 
@@ -87,12 +87,12 @@ npm run sass
 Este comando genera el archivo:
 
 ```text
-css/styles.css
+styles/styles.css
 ```
 
 ## Sitio web
 
-[Ver portfolio online](https://alejo12254.github.io/proyecto-web-coder/)
+[Ver portfolio online](https://alejo-santiago-portfolio.netlify.app)
 
 ## Autor
 
